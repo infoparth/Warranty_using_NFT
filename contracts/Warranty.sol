@@ -35,7 +35,7 @@ contract WarrantyNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnab
         Ownable(_root) 
         {
 
-        grantRole(DEFAULT_ADMIN_ROLE, _root);
+        super._grantRole(DEFAULT_ADMIN_ROLE, _root);
         _setRoleAdmin(Retailers, DEFAULT_ADMIN_ROLE);
 
     }
